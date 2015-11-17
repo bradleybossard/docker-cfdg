@@ -18,4 +18,7 @@ WORKDIR /root/context-free
 
 RUN make
 
-RUN ./cfdg -s 500 input/mtree.cfdg mtree.png
+RUN cp ./cfdg /usr/bin/
+
+RUN cfdg -s 500 input/mtree.cfdg mtree.png
+
